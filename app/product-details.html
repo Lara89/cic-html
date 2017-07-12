@@ -36,7 +36,7 @@
 								<ul class="main-menu">
 									<li><a href="/">Inicio</a></li>
 									<li><a href="/blog.html">Blog</a></li>
-									<li><a href="/farmacia.html">Farmacia</a></li>
+									<li><a class="selected" href="/farmacy.html">Farmacia</a></li>
 									<li><a href="/contact.html">Contacto</a></li>
 								</ul>
 							</div>
@@ -62,7 +62,7 @@
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
 							<li><a href="#">Inicio</a></li>
-							<li><a href="farmacia.html">Farmacia</a></li>
+							<li><a href="farmacy.html">Farmacia</a></li>
 							<li class="active">Product Title</li>
 						</ol>
 					</div>
@@ -70,13 +70,13 @@
 				<div class="display-flex row">
 					<div class="product-image-gallery col-sm-6">
 						<div class="product-main-picture">
-							<img src="images/farmacy/products/product-example.png" alt="">
-							<a class="expand-image-btn" href="javascript:;"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+							<img class="big-image-container" src="images/farmacy/products/product-example.png" alt="">
+							<a class="expand-image-btn hide" href="javascript:;"><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
 						</div>
 						<div class="product-secondary-pictures">
-							<a href="javascript:;"><img src="images/farmacy/products/product-example.png" alt=""></a>
-							<a href="javascript:;"><img src="images/farmacy/products/product-example.png" alt=""></a>
-							<a href="javascript:;"><img src="images/farmacy/products/product-example.png" alt=""></a>
+							<a class="view-more-options" href="javascript:;"><img src="images/farmacy/products/product-example-2.png" alt=""></a>
+							<a class="view-more-options" href="javascript:;"><img src="images/farmacy/products/product-example-3.png" alt=""></a>
+							<a class="view-more-options" href="javascript:;"><img src="images/farmacy/products/product-example-4.png" alt=""></a>
 						</div>
 					</div>
 					<div class="product-information col-sm-6">
@@ -93,12 +93,12 @@
 						<div class="form-container">
 							<form action="/">
 								<div class="row">
-									<div class="col-sm-2">
+									<div class="col-md-2 col-sm-3 col-xs-4">
 										<label class="control-label qty-input-label" for="qty-input-input">
 											<input class="form-control" id="qty-input-input" type="number" value="1">
 										</label>
 									</div>
-									<div class="col-sm-10 add-to-cart-btn-holder">
+									<div class="col-md-10 col-sm-9 col-xs-6 add-to-cart-btn-holder">
 										<button type="submit" class="btn btn-primary btn-lg">Agregar al carrito</button>
 									</div>
 								</div>
@@ -127,10 +127,19 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td><a href="/">#1231235</a></td>
-									<td>Jahgnna Cordero</td>
-									<td>12 abril 2017</td>
+								<tr class="recipe-title recipe-number-1">
+									<td>
+										<span class="title visible-sm visible-xs">Receta</span>
+										<a href="/">#1231235</a>
+									</td>
+									<td>
+										<span class="title visible-sm visible-xs">Receta</span>
+										Jahgnna Cordero
+									</td>
+									<td>
+										<span class="title visible-sm visible-xs">Fecha Cita</span>
+										12 abril 2017
+									</td>
 									<td>
 										<a href="/" class="btn btn-secondary float-right">
 											<i class="fa fa-print" aria-hidden="true"></i>
@@ -138,11 +147,13 @@
 										</a>
 									</td>
 								</tr>
-								<tr class="table-row-detials">
+								<tr class="table-row-details recipe-product-container recipe-number-1">
 									<td colspan="4">
-										<h4><a href="/">Nombre producto 12ml</a></h4>
-										<p>Se debe tomar 2 veces al día, cada 12 horas.</p>
-										<p>Este producto puede producir irritación en algunos casos, se le recomienda llamar al doctor en caso de presentar...</p>
+										<div class="recipe-product">
+											<h4><a href="/">Nombre producto 12ml</a></h4>
+											<p>Se debe tomar 2 veces al día, cada 12 horas.</p>
+											<p>Este producto puede producir irritación en algunos casos, se le recomienda llamar al doctor en caso de presentar...</p>
+										</div>
 									</td>
 								</tr>
 							</tbody>
@@ -283,6 +294,9 @@
 		<script>window.jQuery || document.write('<script src="js/lib/jquery-1.11.2.min.js"><\/script>')</script>
 		<script src="js/lib/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
+		<script type="text/javascript">
+			productModule.init();
+		</script>
 		<!-- endbuild -->
 
 	</body>

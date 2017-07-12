@@ -114,8 +114,12 @@ a {
 		}
 		.main-menu {
 			a {
-				color: $blue-green;
+				color: $grey;
 				font-weight: 500;
+				&:hover,
+				&.selected {
+					color: $blue-green;
+				}
 			}
 		}
 		.header-actions-wrapper {
@@ -434,6 +438,9 @@ a {
 
 //Product Module
 .product-module {
+	h2 {
+		color: $black;
+	}
 	.display-flex {
 		display: flex;
 		flex-wrap: wrap;
@@ -471,7 +478,8 @@ a {
 			color: $dark-grey;
 		}
 		.product-price {
-			color: $dark-grey;
+			color: $blue-green;
+			font-size: 22px;
 		}
 		.add-to-cart-btn-holder {
 			padding-left: 0;
@@ -492,7 +500,7 @@ a {
 		td {
 			padding: 10px 0 20px 0;
 		}
-		.table-row-detials {
+		.table-row-details {
 			background: $light-grey-3;
 			td {
 				padding: 10px 30px 30px 30px;
@@ -502,6 +510,74 @@ a {
 	.farmacy-elements-container {
 		h2 {
 			margin-bottom: 30px;
+		}
+	}
+	.farmacy-elements-container {
+		a {
+			background: $white;
+		}
+	}
+	@media (max-width: $screen-sm-max) {
+		.expand-image-btn {
+			display: none;
+		}
+		.product-image-gallery {
+			padding: 0;
+		}
+		.table-module {
+			table,
+			tbody,
+			tr,
+			td {
+				display: block;
+				width: 100%;
+			}
+			thead {
+				display: none;
+			}
+			td {
+				padding-bottom: 10px;
+			}
+			.btn {
+				margin-bottom: 30px;
+				float: none;
+			}
+			.title {
+				color: $black;
+			}
+		}
+	}
+}
+
+//Shopping Cart Module
+.shopping-cart-module {
+	table {
+		width: 100%;
+	}
+	th {
+		padding: 0 0 20px 0;
+	}
+	tbody {
+		tr {
+			border-top: 1px solid;
+		}
+	}
+	.product-qty-input {
+		max-width: 90px;
+	}
+	.shopping-cart-table-container {
+		margin-bottom: 70px;
+		padding: 40px 30px;
+		background: #FFF;
+	}
+	.product-details-content {
+		min-height: 130px;
+		padding-left: 120px;
+		position: relative;
+		.product-img {
+			width: 100px;
+			position: absolute;
+			left: 0;
 		}
 	}
 }
