@@ -13,7 +13,8 @@ $btn-secondary-bg: $white;
 $btn-secondary-border: $dark-grey;
 
 @import "bootstrap-scss/bootstrap";
-@import "select2";
+@import "lib/select2";
+@import "lib/fileinput";
 
 //General Styles
 body {
@@ -50,6 +51,9 @@ a {
 	//border: none;
 	outline: none;
 	box-shadow: none;
+}
+.modal-dialog {
+	z-index: 1041;
 }
 @media (max-width: $screen-sm-max) {
 	.hidden-sm {
@@ -553,32 +557,106 @@ a {
 .shopping-cart-module {
 	table {
 		width: 100%;
-	}
-	th {
-		padding: 0 0 20px 0;
-	}
-	tbody {
-		tr {
-			border-top: 1px solid;
+		p {
+			margin: 0;
 		}
 	}
+	.info-icon {
+		font-size: 20px;
+		color: $blue-green;
+	}
 	.product-qty-input {
-		max-width: 90px;
+		width: 150px;
+		text-align: center;
+		label {
+			margin: 0;
+			width: 60px;
+		}
+	}
+	.product-price {
+		width: 150px;
+		text-align: center;
+	}
+	.total-price {
+		width: 150px;
+		text-align: center;
+	}
+	.action-holder {
+		width: 30px;
+		text-align: right;
+	}
+	.remove-btn {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		text-align: center;
+		border-radius: 15px;
+		border: 3px solid;
+		line-height: 10px;
+		* {
+			display: block;
+		}
 	}
 	.shopping-cart-table-container {
-		margin-bottom: 70px;
+		margin-bottom: 20px;
 		padding: 40px 30px;
 		background: #FFF;
+		th {
+			padding: 0 0 20px 0;
+		}
+		tbody {
+			tr {
+				border-top: 1px solid;
+			}
+		}
+	}
+	.total-table-container {
+		width: 423px;
+		padding: 40px 30px;
+		margin-bottom: 70px;
+		float: right;
+		background: #FFF;
+		.total-row {
+			border-top: 1px solid;
+			td {
+				padding-top: 20px;
+				font-size: 18px;
+			}
+		}
+		td {
+			padding: 0 0 10px 0;
+		}
+		.btn {
+			width: 100%;
+			margin: 20px 0;
+		}
 	}
 	.product-details-content {
-		min-height: 130px;
-		padding-left: 120px;
+		min-height: 140px;
+		padding: 20px 0 0 120px;
 		position: relative;
+		h3 {
+			margin: 0;
+		}
 		.product-img {
 			width: 100px;
 			position: absolute;
 			left: 0;
 		}
+		.recipe-info {
+			margin-top: 15px;
+		}
+		.recipe-icon {
+			margin-right: 5px;
+		}
+	}
+	.carts-container {
+		font-size: 34px;
+		text-align: center;
+	}
+	.file-preview {
+		max-width: 210px;
 	}
 }
 

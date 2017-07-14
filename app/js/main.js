@@ -110,3 +110,86 @@ var farmacyModule = {
 		$('select').select2();
 	}
 }
+
+var shoppingCartModule = {
+	currencySymbol: '$',
+	init: function(){
+		var instance = this;
+		instance.bindUI();
+		instance.initCartCalculator();
+		instance.bindRemoveProduct();
+		instance.initFileMask();
+	},
+	bindUI: function(){
+		var instance = this;
+		instance.initTooltip();
+	},
+	initTooltip: function(){
+		//Init Tooltip
+		$('[data-toggle="tooltip"]').tooltip();
+	},
+	initCartCalculator: function(){
+		var instance = this;
+
+		$('.qty-input').on('input',function(e){
+			var currentElement = $(this);
+			instance.bindProductCalculator(currentElement);
+		});
+	},
+	bindProductCalculator: function(currentElement){
+		var instance = this;
+		var currentQty = currentElement.val();
+		var currentElementContainer = currentElement.parents('.product-container');
+		var currentProductValue = currentElementContainer.find('.unitPrice').val();
+		var totalPriceContainer = currentElementContainer.find('.totalPrice');
+
+		//Set new product price
+		var totalPrice = currentProductValue*currentQty;
+		totalPriceContainer.val(totalPrice);
+		currentElementContainer.find('.total-price p').text(instance.currencySymbol+totalPrice);
+
+		instance.bindTotalCalculator();
+	},
+	bindTotalCalculator: function(){
+		var instance = this;
+		var subTotalInput = $('.subtotalInput');
+		var subTotalContainer = $('.subtotal-container');
+		var taxInput = $('.taxInput');
+		var taxContainer = $('.tax-container');
+		var totalInput = $('.totalInput');
+		var totalContainer = $('.total-container');
+
+		//Set Total Price
+		var finalPrice = 0;
+		var taxPrice = 0;
+		var totalPriceElements = $('.totalPrice');
+
+		totalPriceElements.each(function(){
+			finalPrice += parseInt($(this).val());
+		});
+
+		subTotalInput.val(finalPrice);
+		subTotalContainer.text(instance.currencySymbol + finalPrice);
+		var totalTax = Math.round((finalPrice * 0.13) * 100) / 100;
+		taxInput.val(totalTax)
+		taxContainer.text(instance.currencySymbol + totalTax);
+		totalInput.val(finalPrice+totalTax)
+		totalContainer.text(instance.currencySymbol + (finalPrice+totalTax));
+	},
+	bindRemoveProduct: function(){
+		var instance = this;
+
+		$('.remove-btn').click(function(e){
+			e.preventDefault();
+			currentElementParent = $(this).parents('.product-container');
+			currentElementParent.remove();
+
+
+			instance.bindTotalCalculator();
+		});
+	},
+	initFileMask: function(){
+		$(".recipe-info").fileinput({showCaption: false});
+	}
+}
+
