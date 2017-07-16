@@ -1,0 +1,39 @@
+.table-module {
+	margin-bottom: 40px;
+	padding: 20px 30px;
+	background: $white;
+	table {
+		width: 100%;
+	}
+	td {
+		padding: 10px 0 20px 0;
+	}
+	.table-row-details {
+		background: $light-grey-3;
+		td {
+			padding: 10px 30px 30px 30px;
+		}
+	}
+	@media (max-width: $screen-sm-max) {
+		table,
+		tbody,
+		tr,
+		td {
+			display: block;
+			width: 100%;
+		}
+		thead {
+			display: none;
+		}
+		td {
+			padding-bottom: 10px;
+		}
+		.btn {
+			margin-bottom: 30px;
+			float: none;
+		}
+		.title {
+			color: $black;
+		}
+	}
+}

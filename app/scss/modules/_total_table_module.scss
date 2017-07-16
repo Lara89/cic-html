@@ -1,0 +1,24 @@
+.total-table-module {
+	width: 423px;
+	padding: 40px 30px;
+	margin-bottom: 70px;
+	float: right;
+	background: #FFF;
+	table {
+		width: 100%;
+	}
+	.total-row {
+		border-top: 1px solid;
+		td {
+			padding-top: 20px;
+			font-size: 18px;
+		}
+	}
+	td {
+		padding: 0 0 10px 0;
+	}
+	.btn {
+		width: 100%;
+		margin: 20px 0;
+	}
+}

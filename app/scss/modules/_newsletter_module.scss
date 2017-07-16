@@ -1,0 +1,20 @@
+//Newsletter Module
+.newsletter-module {
+    padding: 50px 0 60px 0;
+	background: $dark-grey;
+	text-align: center;
+	h2 {
+		color: $white;
+	}
+	.form-container {
+		max-width: 410px;
+		margin: 40px auto 0 auto;
+	}
+	.btn {
+		width: 100%;
+		padding: 10px 20px 11px 20px;
+	}
+	@media (max-width: $screen-sm-max) {
+		padding: 50px 20px 60px 20px;
+	}
+}

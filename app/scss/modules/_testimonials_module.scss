@@ -1,0 +1,15 @@
+//Testimonials Module
+.testimonials {
+	background: $dark-grey;
+	padding: 50px 0 30px 0;
+	.testimony-message {
+		margin: 0;
+		color: $white;
+	}
+	.slick-prev {
+		left: -25px;
+	}
+	.slick-next {
+		right: -25px;
+	}
+}

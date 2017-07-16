@@ -1,0 +1,50 @@
+//Farmacy Products Module
+.farmacy-elements-container {
+	display: flex;
+	flex-wrap: wrap;
+	.product-element {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	a {
+		display: block;
+		height: 100%;
+		text-decoration: none;
+	}
+	.product-image {
+		img {
+			width: 100%;
+		}
+	}
+	.company-name {
+ 		font-size: 12px;
+ 		color: $grey;
+	}
+	.product-price {
+		font-size: 16px;
+	}
+	.product-page-pagination {
+		width: 100%;
+		margin-bottom: 100px;
+		.pagination {
+			float: right;
+		}
+	}
+	@media (max-width: $screen-sm-min) {
+		.product-information {
+			padding-left: 30px;
+			padding-right: 0;
+			text-align: left;
+			h3 {
+				margin-top: 10px;
+			}
+		}
+	}
+	@media (max-width: 400px) {
+		.product-image,
+		.product-information {
+			width: 100%;
+			padding: 0;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+//Social Network Module
+.social-networks-container {
+	margin-bottom: 30px;
+    padding: 20px 10px 40px 10px;
+	background: #FFF;
+	text-align: center;
+	.icon-horizontal-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				font-size: 24px;
+				background: white;
+			}
+		}
+	}
+}

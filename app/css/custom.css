@@ -6891,6 +6891,69 @@ a, a:hover, a:focus, a:active {
     .footer .footer-columns {
       margin-bottom: 40px; } }
 
+.farmacy-container .breadcrumb {
+  margin-top: 50px; }
+
+.category-menu {
+  padding: 20px 0; }
+  .category-menu .category-list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .category-menu .category-list a {
+      display: block;
+      padding: 10px 0; }
+  @media (max-width: 1200px) {
+    .category-menu {
+      padding: 0 0 10px 0; }
+      .category-menu h3 {
+        margin-top: 0; } }
+
+.newsletter-module {
+  padding: 50px 0 60px 0;
+  background: #333333;
+  text-align: center; }
+  .newsletter-module h2 {
+    color: white; }
+  .newsletter-module .form-container {
+    max-width: 410px;
+    margin: 40px auto 0 auto; }
+  .newsletter-module .btn {
+    width: 100%;
+    padding: 10px 20px 11px 20px; }
+  @media (max-width: 991px) {
+    .newsletter-module {
+      padding: 50px 20px 60px 20px; } }
+
+.table-module {
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  background: white; }
+  .table-module table {
+    width: 100%; }
+  .table-module td {
+    padding: 10px 0 20px 0; }
+  .table-module .table-row-details {
+    background: #F3F3F3; }
+    .table-module .table-row-details td {
+      padding: 10px 30px 30px 30px; }
+  @media (max-width: 991px) {
+    .table-module table,
+    .table-module tbody,
+    .table-module tr,
+    .table-module td {
+      display: block;
+      width: 100%; }
+    .table-module thead {
+      display: none; }
+    .table-module td {
+      padding-bottom: 10px; }
+    .table-module .btn {
+      margin-bottom: 30px;
+      float: none; }
+    .table-module .title {
+      color: black; } }
+
 .social-networks-container {
   margin-bottom: 30px;
   padding: 20px 10px 40px 10px;
@@ -6910,316 +6973,6 @@ a, a:hover, a:focus, a:active {
         font-size: 24px;
         background: white; }
 
-.search-input-container .search-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px; }
-
-.search-input-container .input-search-label {
-  width: 100%;
-  position: relative; }
-
-.search-input-container .form-control {
-  padding-left: 40px; }
-
-.category-menu {
-  padding: 20px 0; }
-  .category-menu .category-list {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .category-menu .category-list a {
-      display: block;
-      padding: 10px 0; }
-  @media (max-width: 1200px) {
-    .category-menu {
-      padding: 0 0 10px 0; }
-      .category-menu h3 {
-        margin-top: 0; } }
-
-.blog-elements-container h2 {
-  margin-top: 0; }
-
-.blog-elements-container .blog-element {
-  min-height: 270px;
-  margin-bottom: 25px;
-  padding: 30px 30px 40px 30px;
-  position: relative;
-  background: #FFF; }
-
-.blog-elements-container .blog-details {
-  padding: 10px 0 23px 0; }
-  .blog-elements-container .blog-details p {
-    margin: 0; }
-
-.blog-elements-container .image-container img {
-  width: 100%; }
-
-.blog-elements-container .blog-element-details {
-  padding: 50px 30px 40px 30px; }
-  .blog-elements-container .blog-element-details h2 {
-    margin-top: 50px; }
-
-.blog-comments-container {
-  background: white;
-  padding: 50px 40px 30px 40px; }
-  .blog-comments-container .comment-content {
-    padding-bottom: 20px; }
-  .blog-comments-container .comment-date {
-    margin-right: 20px; }
-  .blog-comments-container .comment-feedback {
-    margin: 30px 0 0 50px;
-    padding: 30px 0px 30px 30px;
-    border-top: 1px solid #F9F9F9; }
-  .blog-comments-container .user-icon {
-    font-size: 40px; }
-  .blog-comments-container .new-comment-form {
-    border-top: 1px solid #F9F9F9; }
-
-.farmacy-container .breadcrumb {
-  margin-top: 50px; }
-
-.farmacy-filters-container {
-  background: white;
-  margin-bottom: 30px;
-  padding: 30px 20px; }
-  .farmacy-filters-container .category-menu {
-    padding: 0; }
-  @media (max-width: 1200px) {
-    .farmacy-filters-container {
-      padding: 40px 20px 20px 20px; } }
-
-.farmacy-ad-widget {
-  margin-bottom: 100px; }
-  .farmacy-ad-widget img {
-    max-width: 100%;
-    max-height: 600px; }
-
-.farmacy-elements-container {
-  display: flex;
-  flex-wrap: wrap; }
-  .farmacy-elements-container .product-element {
-    margin-bottom: 30px;
-    text-align: center; }
-  .farmacy-elements-container a {
-    display: block;
-    height: 100%;
-    text-decoration: none; }
-  .farmacy-elements-container .product-image img {
-    width: 100%; }
-  .farmacy-elements-container .company-name {
-    font-size: 12px;
-    color: #939598; }
-  .farmacy-elements-container .product-price {
-    font-size: 16px; }
-  .farmacy-elements-container .product-page-pagination {
-    width: 100%;
-    margin-bottom: 100px; }
-    .farmacy-elements-container .product-page-pagination .pagination {
-      float: right; }
-  @media (max-width: 768px) {
-    .farmacy-elements-container .product-information {
-      padding-left: 30px;
-      padding-right: 0;
-      text-align: left; }
-      .farmacy-elements-container .product-information h3 {
-        margin-top: 10px; } }
-  @media (max-width: 400px) {
-    .farmacy-elements-container .product-image,
-    .farmacy-elements-container .product-information {
-      width: 100%;
-      padding: 0; } }
-
-.newsletter-module {
-  padding: 50px 0 60px 0;
-  background: #333333;
-  text-align: center; }
-  .newsletter-module h2 {
-    color: white; }
-  .newsletter-module .form-container {
-    max-width: 410px;
-    margin: 40px auto 0 auto; }
-  .newsletter-module .btn {
-    width: 100%;
-    padding: 10px 20px 11px 20px; }
-  @media (max-width: 991px) {
-    .newsletter-module {
-      padding: 50px 20px 60px 20px; } }
-
-.product-module h2 {
-  color: black; }
-
-.product-module .display-flex {
-  display: flex;
-  flex-wrap: wrap; }
-
-.product-module .product-image-gallery {
-  padding: 0 30px 0 0;
-  position: relative; }
-  .product-module .product-image-gallery img {
-    max-width: 100%; }
-  .product-module .product-image-gallery .expand-image-btn {
-    position: absolute;
-    top: 10px;
-    right: 50px;
-    font-size: 34px;
-    color: white; }
-  .product-module .product-image-gallery .product-secondary-pictures {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    text-align: center; }
-    .product-module .product-image-gallery .product-secondary-pictures img {
-      width: 100px;
-      padding: 0 5px; }
-
-.product-module .product-information {
-  background: white;
-  padding: 10px 30px 30px 30px; }
-  .product-module .product-information h1 {
-    margin-bottom: 0;
-    color: #333333; }
-  .product-module .product-information .product-price {
-    color: #45c0be;
-    font-size: 22px; }
-  .product-module .product-information .add-to-cart-btn-holder {
-    padding-left: 0; }
-
-.product-module .product-long-description {
-  background: white;
-  margin: 40px auto;
-  padding: 20px 40px 30px 40px; }
-
-.product-module .table-module {
-  margin-bottom: 40px;
-  padding: 20px 30px;
-  background: white; }
-  .product-module .table-module table {
-    width: 100%; }
-  .product-module .table-module td {
-    padding: 10px 0 20px 0; }
-  .product-module .table-module .table-row-details {
-    background: #F3F3F3; }
-    .product-module .table-module .table-row-details td {
-      padding: 10px 30px 30px 30px; }
-
-.product-module .farmacy-elements-container h2 {
-  margin-bottom: 30px; }
-
-.product-module .farmacy-elements-container a {
-  background: white; }
-
-@media (max-width: 991px) {
-  .product-module .expand-image-btn {
-    display: none; }
-  .product-module .product-image-gallery {
-    padding: 0; }
-  .product-module .table-module table,
-  .product-module .table-module tbody,
-  .product-module .table-module tr,
-  .product-module .table-module td {
-    display: block;
-    width: 100%; }
-  .product-module .table-module thead {
-    display: none; }
-  .product-module .table-module td {
-    padding-bottom: 10px; }
-  .product-module .table-module .btn {
-    margin-bottom: 30px;
-    float: none; }
-  .product-module .table-module .title {
-    color: black; } }
-
-.shopping-cart-module table {
-  width: 100%; }
-  .shopping-cart-module table p {
-    margin: 0; }
-
-.shopping-cart-module .info-icon {
-  font-size: 20px;
-  color: #45c0be; }
-
-.shopping-cart-module .product-qty-input {
-  width: 150px;
-  text-align: center; }
-  .shopping-cart-module .product-qty-input label {
-    margin: 0;
-    width: 60px; }
-
-.shopping-cart-module .product-price {
-  width: 150px;
-  text-align: center; }
-
-.shopping-cart-module .total-price {
-  width: 150px;
-  text-align: center; }
-
-.shopping-cart-module .action-holder {
-  width: 30px;
-  text-align: right; }
-
-.shopping-cart-module .remove-btn {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  text-align: center;
-  border-radius: 15px;
-  border: 3px solid;
-  line-height: 10px; }
-  .shopping-cart-module .remove-btn * {
-    display: block; }
-
-.shopping-cart-module .shopping-cart-table-container {
-  margin-bottom: 20px;
-  padding: 40px 30px;
-  background: #FFF; }
-  .shopping-cart-module .shopping-cart-table-container th {
-    padding: 0 0 20px 0; }
-  .shopping-cart-module .shopping-cart-table-container tbody tr {
-    border-top: 1px solid; }
-
-.shopping-cart-module .total-table-container {
-  width: 423px;
-  padding: 40px 30px;
-  margin-bottom: 70px;
-  float: right;
-  background: #FFF; }
-  .shopping-cart-module .total-table-container .total-row {
-    border-top: 1px solid; }
-    .shopping-cart-module .total-table-container .total-row td {
-      padding-top: 20px;
-      font-size: 18px; }
-  .shopping-cart-module .total-table-container td {
-    padding: 0 0 10px 0; }
-  .shopping-cart-module .total-table-container .btn {
-    width: 100%;
-    margin: 20px 0; }
-
-.shopping-cart-module .product-details-content {
-  min-height: 140px;
-  padding: 20px 0 0 120px;
-  position: relative; }
-  .shopping-cart-module .product-details-content h3 {
-    margin: 0; }
-  .shopping-cart-module .product-details-content .product-img {
-    width: 100px;
-    position: absolute;
-    left: 0; }
-  .shopping-cart-module .product-details-content .recipe-info {
-    margin-top: 15px; }
-  .shopping-cart-module .product-details-content .recipe-icon {
-    margin-right: 5px; }
-
-.shopping-cart-module .carts-container {
-  font-size: 34px;
-  text-align: center; }
-
-.shopping-cart-module .file-preview {
-  max-width: 210px; }
-
 .about-us {
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -7235,16 +6988,23 @@ a, a:hover, a:focus, a:active {
     margin-top: 100px;
     padding: 0 20px; }
 
-.testimonials {
-  background: #333333;
-  padding: 50px 0 30px 0; }
-  .testimonials .testimony-message {
-    margin: 0;
-    color: white; }
-  .testimonials .slick-prev {
-    left: -25px; }
-  .testimonials .slick-next {
-    right: -25px; }
+.our-location {
+  position: relative; }
+  .our-location .map {
+    height: 422px; }
+  .our-location .medium-title-text {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600; }
+  .our-location .map-information {
+    width: 350px;
+    height: 320px;
+    padding: 30px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    background: #FFF; }
 
 .our-services {
   position: relative; }
@@ -7318,20 +7078,309 @@ a, a:hover, a:focus, a:active {
     width: 100%;
     padding: 0; } }
 
-.our-location {
+.testimonials {
+  background: #333333;
+  padding: 50px 0 30px 0; }
+  .testimonials .testimony-message {
+    margin: 0;
+    color: white; }
+  .testimonials .slick-prev {
+    left: -25px; }
+  .testimonials .slick-next {
+    right: -25px; }
+
+.blog-comments-container {
+  background: white;
+  padding: 50px 40px 30px 40px; }
+  .blog-comments-container .comment-content {
+    padding-bottom: 20px; }
+  .blog-comments-container .comment-date {
+    margin-right: 20px; }
+  .blog-comments-container .comment-feedback {
+    margin: 30px 0 0 50px;
+    padding: 30px 0px 30px 30px;
+    border-top: 1px solid #F9F9F9; }
+  .blog-comments-container .user-icon {
+    font-size: 40px; }
+  .blog-comments-container .new-comment-form {
+    border-top: 1px solid #F9F9F9; }
+
+.blog-elements-container h2 {
+  margin-top: 0; }
+
+.blog-elements-container .blog-element {
+  min-height: 270px;
+  margin-bottom: 25px;
+  padding: 30px 30px 40px 30px;
+  position: relative;
+  background: #FFF; }
+
+.blog-elements-container .blog-details {
+  padding: 10px 0 23px 0; }
+  .blog-elements-container .blog-details p {
+    margin: 0; }
+
+.blog-elements-container .image-container img {
+  width: 100%; }
+
+.blog-elements-container .blog-element-details {
+  padding: 50px 30px 40px 30px; }
+  .blog-elements-container .blog-element-details h2 {
+    margin-top: 50px; }
+
+.farmacy-ad-widget {
+  margin-bottom: 100px; }
+  .farmacy-ad-widget img {
+    max-width: 100%;
+    max-height: 600px; }
+
+.farmacy-filters-container {
+  background: white;
+  margin-bottom: 30px;
+  padding: 30px 20px; }
+  .farmacy-filters-container .category-menu {
+    padding: 0; }
+  @media (max-width: 1200px) {
+    .farmacy-filters-container {
+      padding: 40px 20px 20px 20px; } }
+
+.farmacy-elements-container {
+  display: flex;
+  flex-wrap: wrap; }
+  .farmacy-elements-container .product-element {
+    margin-bottom: 30px;
+    text-align: center; }
+  .farmacy-elements-container a {
+    display: block;
+    height: 100%;
+    text-decoration: none; }
+  .farmacy-elements-container .product-image img {
+    width: 100%; }
+  .farmacy-elements-container .company-name {
+    font-size: 12px;
+    color: #939598; }
+  .farmacy-elements-container .product-price {
+    font-size: 16px; }
+  .farmacy-elements-container .product-page-pagination {
+    width: 100%;
+    margin-bottom: 100px; }
+    .farmacy-elements-container .product-page-pagination .pagination {
+      float: right; }
+  @media (max-width: 768px) {
+    .farmacy-elements-container .product-information {
+      padding-left: 30px;
+      padding-right: 0;
+      text-align: left; }
+      .farmacy-elements-container .product-information h3 {
+        margin-top: 10px; } }
+  @media (max-width: 400px) {
+    .farmacy-elements-container .product-image,
+    .farmacy-elements-container .product-information {
+      width: 100%;
+      padding: 0; } }
+
+.search-input-container .search-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px; }
+
+.search-input-container .input-search-label {
+  width: 100%;
   position: relative; }
-  .our-location .map {
-    height: 422px; }
-  .our-location .medium-title-text {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 600; }
-  .our-location .map-information {
-    width: 350px;
-    height: 320px;
-    padding: 30px;
+
+.search-input-container .form-control {
+  padding-left: 40px; }
+
+.product-module h2 {
+  color: black; }
+
+.product-module .display-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.product-module .product-image-gallery {
+  padding: 0 30px 0 0;
+  position: relative; }
+  .product-module .product-image-gallery img {
+    max-width: 100%; }
+  .product-module .product-image-gallery .expand-image-btn {
     position: absolute;
-    top: 70px;
-    left: 30px;
-    background: #FFF; }
+    top: 10px;
+    right: 50px;
+    font-size: 34px;
+    color: white; }
+  .product-module .product-image-gallery .product-secondary-pictures {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .product-module .product-image-gallery .product-secondary-pictures img {
+      width: 100px;
+      padding: 0 5px; }
+
+.product-module .product-information {
+  background: white;
+  padding: 10px 30px 30px 30px; }
+  .product-module .product-information h1 {
+    margin-bottom: 0;
+    color: #333333; }
+  .product-module .product-information .product-price {
+    color: #45c0be;
+    font-size: 22px; }
+  .product-module .product-information .add-to-cart-btn-holder {
+    padding-left: 0; }
+
+.product-module .product-long-description {
+  background: white;
+  margin: 40px auto;
+  padding: 20px 40px 30px 40px; }
+
+.product-module .farmacy-elements-container h2 {
+  margin-bottom: 30px; }
+
+.product-module .farmacy-elements-container a {
+  background: white; }
+
+@media (max-width: 991px) {
+  .product-module .expand-image-btn {
+    display: none; }
+  .product-module .product-image-gallery {
+    padding: 0; } }
+
+.shopping-cart-module table {
+  width: 100%; }
+  .shopping-cart-module table p {
+    margin: 0; }
+
+.shopping-cart-module .info-icon {
+  font-size: 20px;
+  color: #45c0be; }
+
+.shopping-cart-module .product-qty-input {
+  width: 150px;
+  text-align: center; }
+  .shopping-cart-module .product-qty-input label {
+    margin: 0;
+    width: 60px; }
+
+.shopping-cart-module .product-price {
+  width: 150px;
+  text-align: center; }
+
+.shopping-cart-module .total-price {
+  width: 150px;
+  text-align: center; }
+
+.shopping-cart-module .action-holder {
+  width: 30px;
+  text-align: right; }
+
+.shopping-cart-module .remove-btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  text-align: center;
+  border-radius: 15px;
+  border: 3px solid;
+  line-height: 10px; }
+  .shopping-cart-module .remove-btn * {
+    display: block; }
+
+.shopping-cart-module .shopping-cart-table-container {
+  margin-bottom: 20px;
+  padding: 40px 30px;
+  background: #FFF; }
+  .shopping-cart-module .shopping-cart-table-container th {
+    padding: 0 0 20px 0; }
+  .shopping-cart-module .shopping-cart-table-container tbody tr {
+    border-top: 1px solid; }
+
+.shopping-cart-module .product-details-content {
+  min-height: 140px;
+  padding: 20px 0 0 120px;
+  position: relative; }
+  .shopping-cart-module .product-details-content h3 {
+    margin: 0; }
+  .shopping-cart-module .product-details-content .product-img {
+    width: 100px;
+    position: absolute;
+    left: 0; }
+  .shopping-cart-module .product-details-content .recipe-info {
+    margin-top: 15px; }
+  .shopping-cart-module .product-details-content .recipe-icon {
+    margin-right: 5px; }
+
+.shopping-cart-module .carts-container {
+  font-size: 34px;
+  text-align: center; }
+
+.shopping-cart-module .file-preview {
+  max-width: 210px; }
+
+@media (max-width: 991px) {
+  .shopping-cart-module thead {
+    display: none; }
+  .shopping-cart-module table,
+  .shopping-cart-module tbody,
+  .shopping-cart-module tr,
+  .shopping-cart-module td {
+    display: block;
+    width: 100%;
+    float: left; }
+  .shopping-cart-module td {
+    width: auto;
+    padding-bottom: 20px;
+    float: left; }
+    .shopping-cart-module td p {
+      margin-top: 15px;
+      font-size: 20px; }
+  .shopping-cart-module .product-details {
+    width: 100%; }
+    .shopping-cart-module .product-details .btn .hidden-xs {
+      display: inline !important; }
+  .shopping-cart-module .product-price,
+  .shopping-cart-module .product-qty-input,
+  .shopping-cart-module .total-price {
+    text-align: left; }
+  .shopping-cart-module .control-label span {
+    margin-bottom: 10px;
+    line-height: 20px; } }
+
+@media (max-width: 450px) {
+  .shopping-cart-module .product-container {
+    position: relative; }
+    .shopping-cart-module .product-container .action-holder {
+      position: absolute;
+      top: 20px;
+      right: 10px; }
+  .shopping-cart-module .product-details-content {
+    padding-left: 0; }
+    .shopping-cart-module .product-details-content .product-img {
+      width: 80%;
+      margin-bottom: 20px;
+      position: relative; } }
+
+.total-table-module {
+  width: 423px;
+  padding: 40px 30px;
+  margin-bottom: 70px;
+  float: right;
+  background: #FFF; }
+  .total-table-module table {
+    width: 100%; }
+  .total-table-module .total-row {
+    border-top: 1px solid; }
+    .total-table-module .total-row td {
+      padding-top: 20px;
+      font-size: 18px; }
+  .total-table-module td {
+    padding: 0 0 10px 0; }
+  .total-table-module .btn {
+    width: 100%;
+    margin: 20px 0; }
+
+.payment-method-module .total-table-module {
+  width: 100%; }

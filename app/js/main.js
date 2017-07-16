@@ -189,7 +189,10 @@ var shoppingCartModule = {
 		});
 	},
 	initFileMask: function(){
-		$(".recipe-info").fileinput({showCaption: false});
+		//https://github.com/kartik-v/bootstrap-fileinput
+		$(".recipe-info").fileinput({
+			showCaption: false
+		});
 	}
 }
 

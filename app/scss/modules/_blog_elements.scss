@@ -1,0 +1,30 @@
+//Blog Elements
+.blog-elements-container {
+	h2 {
+		margin-top: 0;
+	}
+	.blog-element {
+		min-height: 270px;
+		margin-bottom: 25px;
+		padding: 30px 30px 40px 30px;
+		position: relative;
+		background: #FFF;
+	}
+	.blog-details {
+		padding: 10px 0 23px 0;
+		p {
+			margin: 0;
+		}
+	}
+	.image-container {
+		img {
+			width: 100%;
+		}
+	}
+	.blog-element-details {
+		padding: 50px 30px 40px 30px;
+		h2 {
+			margin-top: 50px;
+		}
+	}
+}

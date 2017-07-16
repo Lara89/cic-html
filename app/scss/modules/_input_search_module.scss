@@ -1,0 +1,16 @@
+//Input Search Module
+.search-input-container {
+	.search-icon {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		font-size: 20px;
+	}
+	.input-search-label {
+		width: 100%;
+		position: relative;
+	}
+	.form-control {
+		padding-left: 40px; 
+	}
+}

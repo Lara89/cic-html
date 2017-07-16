@@ -1,0 +1,19 @@
+//Category Menu Module
+.category-menu {
+	padding: 20px 0;
+	.category-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		a {
+			display: block;
+			padding: 10px 0;
+		}
+	}
+	@media (max-width: $screen-lg-min) {
+		padding: 0 0 10px 0;
+		h3 {
+			margin-top: 0;
+		}
+	}
+}

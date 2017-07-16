@@ -1,0 +1,145 @@
+//Header Styles
+.header {
+	.slick-slider {
+		z-index: -1;
+	}
+	.navbar {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	.navbar-brand {
+		height: auto;
+		img {
+			width: 200px;
+		}
+	}
+	.header-right {
+		margin-top: 20px;
+	}
+	.main-menu {
+		margin: 0;
+		padding: 0;
+		li {
+			display: inline-block;
+		}
+		a {
+			display: block;
+			padding: 50px 20px;
+			font-size: 14px;
+			color: $white;
+			font-weight: 300;
+		}
+	}
+	.header-actions-wrapper {
+		margin: 0;
+		padding: 0 30px 0 0px;
+		list-style: none;
+		li {
+			display: inline-block;
+		}
+		a {
+			display: block;
+			padding: 50px 20px 40px 20px;
+			color: $white;
+			font-size: 20px;
+		}
+	}
+	&.simple-header {
+		.navbar {
+			position: relative;
+		}
+		.main-menu {
+			a {
+				color: $grey;
+				font-weight: 500;
+				&:hover,
+				&.selected {
+					color: $blue-green;
+				}
+			}
+		}
+		.header-actions-wrapper {
+			a {
+				color: $blue-green;
+			}
+		}
+	}
+	@media (max-width: $screen-lg-min) {
+		.header-menu {
+			position: absolute;
+			top: 0;
+			right: 0;
+			.header-right {
+				margin: 0;
+			}
+		}
+		.header-actions-wrapper {
+			li {
+				float: left;
+			}
+			a {
+				margin: 0;
+				padding: 50px 30px;
+			}
+		}
+		.main-menu-wrapper {
+			display: block;
+			width: 330px;
+			height: 100% !important;
+			max-height: 100%;
+			position: fixed;
+			left: -330px;
+			top: 0px;
+			bottom: 0px;
+			background: rgb(56, 56, 56);
+			-webkit-transition: left 1s;
+			transition: left 1s;
+			&.in {
+				left: 0;
+			}
+			.main-menu {
+				padding: 30px 0;
+				li {
+					display: block;
+					a {
+						padding: 10px 20px;
+					}
+				}
+			}
+		}
+	}
+}
+.background-slider-header {
+	position: relative;
+	h5 {
+		position: relative;
+		color: #FFF;
+		font-size: 40px;
+	}
+	.full-bg-image {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.bg-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(51, 51, 51, 0.6);
+	}
+	.slick-slide {
+		height: 500px;
+		margin: 0;
+		padding-top: 170px;
+		position: relative;
+		text-align: center;
+	}
+}

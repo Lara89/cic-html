@@ -1,0 +1,55 @@
+//Our Team
+.our-team {
+	.our-team-header {
+		h2 {
+			margin: 70px 0 30px 0;
+		}
+		p {
+			max-width: 520px;
+		}
+	}
+	.our-team-content {
+		padding: 30px 0 60px 0px;
+		.container {
+			padding: 0;
+		}
+	}
+	.team-member {
+		padding: 0 15px;
+		.team-member-content {
+			display: inline-block;
+			width: 100%;
+			background: #FFF;
+		}
+		.btn {
+			min-width: 46%;
+		}
+		.profile-picture {
+			width: 150px;
+			height: 150px;
+		}
+		.right-column {
+			padding-left: 30px;
+		}
+	}
+	.slick-prev {
+		left: -25px;
+	}
+	.slick-next {
+		right: -25px;
+	}
+	.slick-dots {
+		bottom: -50px;
+	}
+	@media (max-width: $screen-lg-min) {
+		.team-member {
+			.team-member-content {
+				padding: 30px;
+			}
+			.right-column {
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+}

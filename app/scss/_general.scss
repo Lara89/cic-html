@@ -1,0 +1,47 @@
+//General Styles
+body {
+	background: $light-grey;
+	color: $grey;
+	font-family: $fontFamily;
+}
+a {
+	&,
+	&:hover,
+	&:focus,
+	&:active {
+		color: $blue-green;
+	}
+}
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.no-padding {
+	padding: 0;
+}
+.no-pointer-events {
+	pointer-events: none;
+}
+.btn {
+	//background: $blue-green;
+	border-radius: 0;
+	//border: none;
+	outline: none;
+	box-shadow: none;
+}
+.modal-dialog {
+	z-index: 1041;
+}
+@media (max-width: $screen-sm-max) {
+	.hidden-sm {
+		display: none;
+	}
+	.padding-sm {
+		padding: 0 15px;
+	}
+}

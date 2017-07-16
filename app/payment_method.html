@@ -57,7 +57,7 @@
 
 		<div class="main-content farmacy-container">
 			
-			<div class="shopping-cart-module container">
+			<div class="payment-method-module container">
 				<div class="breadcrumb-container row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
@@ -67,97 +67,86 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
-						<div class="shopping-cart-table-container">
-							<table>
-								<thead>
-									<tr>
-										<th class="product-details">Producto</th>
-										<th class="product-price">Precio</th>
-										<th class="product-qty-input">Cantidad</th>
-										<th class="total-price">Total</th>
-										<th class="action-holder"></th>
-									</tr>
-								</thead>
-								<tbody>
+					<div class="col-sm-6">
+						<div class="form-information-module">
+							<h3>Información de Pago</h3>
+							<div class="row">
+								<div class="col-sm-6 form-group">
+									<label for="idNumber" class="control-label">
+										Cédula*
+										<input id="idNumber" type="text" class="form-control">
+									</label>
+								</div>
+							</div>
 
-									<tr class="product-container">
-										<td class="product-details">
-											<div class="product-details-content">
-												<img class="product-img" src="/images/farmacy/products/product-example.png">
-												<h3>
-													Product Title
-												</h3>
-												<p>Farma House</p>
-											</div>
-											<input name="productName" type="hidden" value="Product Title">
-											<input name="productId" type="hidden" value="123123">
-										</td>
-										<td class="product-price">
-											<span class="visible-sm visible-xs">Precio</span>
-											<p>$5</p>
-											<input class="unitPrice" name="unitPrice" type="hidden" value="5">
-										</td>
-										<td class="product-qty-input">
-											<label class="control-label qty-input-label" for="qty-input-1">
-												<span class="visible-sm visible-xs">Cantidad</span>
-												<input class="form-control qty-input" min="0" id="qty-input-1" type="number" value="1">
-											</label>
-										</td>
-										<td class="total-price">
-											<span class="visible-sm visible-xs">Total</span>
-											<p>$5</p>
-											<input class="totalPrice" name="totalPrice" type="hidden" value="5">
-										</td>
-										<td class="action-holder">
-											<a class="remove-btn" href="javascript:;">
-												<i class="fa fa-times" aria-hidden="true"></i>
-											</a>
-										</td>
-									</tr>
+							<div class="row">
+								<div class="col-sm-6 form-group">
+									<label for="name" class="control-label">
+										Nombre*
+										<input id="name" type="text" class="form-control">
+									</label>
+								</div>
+								<div class="col-sm-6 form-group">
+									<label for="lastName" class="control-label">
+										Apellidos*
+										<input id="lastName" type="text" class="form-control">
+									</label>
+								</div>
+							</div>
 
-									<tr class="product-container">
-										<td class="product-details">
-											<div class="product-details-content">
-												<img class="product-img" src="/images/farmacy/products/product-example.png">
-												<h3>
-													Product Title
-													<i data-toggle="tooltip" title="Este producto requiere receta, será agregado pero se cobrará una vez se haya confirmado la receta." class="info-icon tt-init fa fa-info-circle" aria-hidden="true"></i>
-												</h3>
-												<p>Farma House</p>
-												<input class="btn btn-secondary recipe-info" name="productRecipe" type="file">
-											</div>
-											<input name="productName" type="hidden" value="Product Title">
-											<input name="productId" type="hidden" value="123123">
-										</td>
-										<td class="product-price">
-											<span class="visible-sm visible-xs">Precio</span>
-											<p>$5</p>
-											<input class="unitPrice" name="unitPrice" type="hidden" value="5">
-										</td>
-										<td class="product-qty-input">
-											<label class="control-label qty-input-label" for="qty-input-3">
-												<span class="visible-sm visible-xs">Cantidad</span>
-												<input class="form-control qty-input" min="0" id="qty-input-3" type="number" value="1">
-											</label>
-										</td>
-										<td class="total-price">
-											<span class="visible-sm visible-xs">Total</span>
-											<p>$5</p>
-											<input class="totalPrice" name="totalPrice" type="hidden" value="5">
-										</td>
-										<td class="action-holder">
-											<a class="remove-btn" href="javascript:;">
-												<i class="fa fa-times" aria-hidden="true"></i>
-											</a>
-										</td>
-									</tr>
+							<div class="row">
+								<div class="col-sm-6 form-group">
+									<label for="country" class="control-label">
+										País*
+										<select id="country" class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</label>
+								</div>
+								<div class="col-sm-6 form-group">
+									<label for="state" class="control-label">
+										Provincia*
+										<select id="state" class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</label>
+								</div>
+							</div>
 
-								</tbody>
-							</table>
-							<div class="clear"></div>
-							
+							<div class="row">
+								<div class="col-sm-6 form-group">
+									<label for="phone" class="control-label">
+										Teléfono*
+										<input id="phone" type="text" class="form-control">
+									</label>
+								</div>
+								<div class="col-sm-6 form-group">
+									<label for="email" class="control-label">
+										Email*
+										<input id="email" type="text" class="form-control">
+									</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-12 form-group">
+									<div class="checkbox">
+										<label for="checkToGo" class="control-label">
+											<input id="checkToGo" type="checkbox" class="">
+											Retirará directamente en la farmacia
+										</label>
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
+					<div class="col-sm-6">
 						<div class="total-table-module total-table-container">
 							<table>
 								<tbody>
