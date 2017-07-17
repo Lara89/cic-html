@@ -1,5 +1,21 @@
 .form-information-module {
     background: #FFF;
-    padding: 10px 30px;
+    padding: 20px 30px;
     margin-bottom: 30px;
+    label {
+		margin-bottom: 0;
+		line-height: 30px;
+    }
+    .checkbox {
+    	margin: 30px 0 20px 0;
+    	label {
+			padding-left: 25px;
+			font-size: 16px;
+    	}
+    	input {
+			margin-left: 0;
+			top: 5px;
+			left: 0;
+    	}
+    }
 }

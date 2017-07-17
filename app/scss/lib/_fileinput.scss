@@ -27,7 +27,7 @@ $bootstrap-fileinput-img-path: "../../images" !default;
   font-size: 999px;
   text-align: right;
   color: #fff;
-  background: transparent url('#{$bootstrap-fileinput-img-path}/ajax-loader.gif') top left no-repeat;
+  //background: transparent url('#{$bootstrap-fileinput-img-path}/ajax-loader.gif') top left no-repeat;
   border: none;
 }
 
@@ -135,7 +135,7 @@ $bootstrap-fileinput-img-path: "../../images" !default;
     display: block;
     color: #428bca;
     border: 1px solid #ddd;
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    //font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     outline: none;
     padding: 8px;
     resize: none;
@@ -317,7 +317,7 @@ $bootstrap-fileinput-img-path: "../../images" !default;
 }
 
 .file-thumb-loading {
-  background: transparent url('#{$bootstrap-fileinput-img-path}/ajax-loader.gif') no-repeat scroll center center content-box !important;
+  //background: transparent url('#{$bootstrap-fileinput-img-path}/ajax-loader.gif') no-repeat scroll center center content-box !important;
 }
 
 .file-sortable .file-drag-handle {
@@ -373,7 +373,7 @@ $bootstrap-fileinput-img-path: "../../images" !default;
 }
 
 .file-uploading {
-  background: url('#{$bootstrap-fileinput-img-path}/ajax-loader.gif') no-repeat center bottom 10px;
+  //background: url('#{$bootstrap-fileinput-img-path}/ajax-loader.gif') no-repeat center bottom 10px;
   opacity: 0.65;
 }
 

@@ -10,6 +10,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+ 
 
 // html
 gulp.task('html', function() {
@@ -51,7 +52,7 @@ gulp.task('useref', function(){
 		.pipe(gulp.dest('dist'))
 });
 gulp.task('images', function(){
-	return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+	return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg|ico)')
 	// Caching images that ran through imagemin
 	.pipe(cache(imagemin({
 			interlaced: true

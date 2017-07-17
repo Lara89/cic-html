@@ -116,13 +116,13 @@ var shoppingCartModule = {
 	init: function(){
 		var instance = this;
 		instance.bindUI();
-		instance.initCartCalculator();
-		instance.bindRemoveProduct();
-		instance.initFileMask();
 	},
 	bindUI: function(){
 		var instance = this;
 		instance.initTooltip();
+		instance.initCartCalculator();
+		instance.bindRemoveProduct();
+		instance.initFileMask();
 	},
 	initTooltip: function(){
 		//Init Tooltip
@@ -192,6 +192,27 @@ var shoppingCartModule = {
 		//https://github.com/kartik-v/bootstrap-fileinput
 		$(".recipe-info").fileinput({
 			showCaption: false
+		});
+	}
+}
+
+var paymentMethodModule = {
+	init: function(){
+		var instance = this;
+		instance.bindUI();
+	},
+	bindUI: function(){
+		var instance = this;
+		instance.initDropdownSelector();
+		instance.toggleShippingForm();
+	},
+	initDropdownSelector: function(){
+		//Init Dropdowns Selectors
+		$('select').select2();
+	},
+	toggleShippingForm: function(){
+		$('#checkToGo').on('change',function(){
+			$('.shipping-information').toggleClass('hide');
 		});
 	}
 }

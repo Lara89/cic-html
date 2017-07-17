@@ -1,9 +1,13 @@
 @import "variables";
+@import "fonts";
 
 //Lib Styles
+@import "lib/font-awesome/font-awesome";
 @import "bootstrap-scss/bootstrap";
 @import "lib/select2";
 @import "lib/fileinput";
+@import "lib/slick/slick";
+@import "lib/slick/slick-theme";
 
 //General Styles
 @import "general";
@@ -42,3 +46,4 @@
 @import "modules/shopping_cart_module";
 @import "modules/total_table_module";
 @import "modules/payment_method_module";
+@import "modules/success_module";

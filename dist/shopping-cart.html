@@ -10,7 +10,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.min.css">
 
-		<script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -21,7 +20,7 @@
 			<nav class="navbar navbar-fixed-top" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="index.html">
 							<img src="images/logo.png" title="Site Logo">
 						</a>
 					</div>
@@ -29,21 +28,21 @@
 						<div class="header-right navbar-right">
 							<div  id="navbar" class="navbar-collapse collapse left-menu main-menu-wrapper float-left">
 								<ul class="main-menu">
-									<li><a href="/">Inicio</a></li>
-									<li><a href="/blog.html">Blog</a></li>
-									<li><a href="/farmacy.html">Farmacia</a></li>
-									<li><a href="/contact.html">Contacto</a></li>
+									<li><a href="index.html">Inicio</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="farmacy.html">Farmacia</a></li>
+									<li><a href="contact.html">Contacto</a></li>
 								</ul>
 							</div>
 							<div class="right-menu float-right">
 								<ul class="header-actions-wrapper float-right">
 									<li><a class="icon-search-menu" href="#" data-search-type="standard"><i class="wicon fa fa-search"></i></a></li>
-									<li><a class="icon-cart-menu" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+									<li class="selected"><a class="icon-cart-menu" href="shopping-cart.html"><i class="fa fa-shopping-cart"></i></a></li>
 									<li class="visible-xs"><a href="javascript:;" class="icon-home-menu navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-reorder"></i></a></li>
 								</ul>
 							</div>
 						</div>
-					</div><!--/.navbar-collapse -->
+					</div>
 
 				</div>
 			</nav>
@@ -56,7 +55,7 @@
 				<div class="breadcrumb-container row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
-							<li><a href="#">Inicio</a></li>
+							<li><a href="index.html">Inicio</a></li>
 							<li class="active">My Cart</li>
 						</ol>
 					</div>
@@ -79,7 +78,7 @@
 									<tr class="product-container">
 										<td class="product-details">
 											<div class="product-details-content">
-												<img class="product-img" src="/images/farmacy/products/product-example.png">
+												<img class="product-img" src="images/farmacy/products/product-example.png">
 												<h3>
 													Product Title
 												</h3>
@@ -114,7 +113,7 @@
 									<tr class="product-container">
 										<td class="product-details">
 											<div class="product-details-content">
-												<img class="product-img" src="/images/farmacy/products/product-example.png">
+												<img class="product-img" src="images/farmacy/products/product-example.png">
 												<h3>
 													Product Title
 													<i data-toggle="tooltip" title="Este producto requiere receta, será agregado pero se cobrará una vez se haya confirmado la receta." class="info-icon tt-init fa fa-info-circle" aria-hidden="true"></i>
@@ -174,7 +173,7 @@
 								</tbody>
 							</table>
 
-							<a href="payment_method.html" class="btn btn-primary btn-lg">Continuar</a>
+							<a href="payment-method.html" class="btn btn-primary btn-lg">Continuar</a>
 
 							<div class="carts-container">
 								<i class="fa fa-cc-visa" aria-hidden="true"></i>
@@ -250,7 +249,7 @@
 			</div>
 		</footer>
 
-		<script src="js/main.min.js"></script>
+		<script src="js/main-shopping-module.min.js"></script>
 
 		<script type="text/javascript">
 			shoppingCartModule.init();

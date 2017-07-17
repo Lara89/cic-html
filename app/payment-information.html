@@ -1,0 +1,210 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Clínica Integral Cordero</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+		<!--build:css css/styles.min.css-->
+		<link rel="stylesheet" href="css/custom.css">
+		<!--endbuild-->
+		
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="header simple-header">
+			<nav class="navbar navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html">
+							<img src="images/logo.png" title="Site Logo">
+						</a>
+					</div>
+					<div class="header-menu">
+						<div class="header-right navbar-right">
+							<div  id="navbar" class="navbar-collapse collapse left-menu main-menu-wrapper float-left">
+								<ul class="main-menu">
+									<li><a href="index.html">Inicio</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="farmacy.html">Farmacia</a></li>
+									<li><a href="contact.html">Contacto</a></li>
+								</ul>
+							</div>
+							<div class="right-menu float-right">
+								<ul class="header-actions-wrapper float-right">
+									<li><a class="icon-search-menu" href="#" data-search-type="standard"><i class="wicon fa fa-search"></i></a></li>
+									<li class="selected"><a class="icon-cart-menu" href="shopping-cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+									<li class="visible-xs"><a href="javascript:;" class="icon-home-menu navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i class="fa fa-reorder"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+
+
+		<div class="main-content payment-method-container">
+			
+			<div class="payment-method-module container">
+				<div class="breadcrumb-container row">
+					<div class="col-sm-12">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="shopping-cart.html">My Cart</a></li>
+							<li class="active">My Cart</li>
+						</ol>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-7">
+						<div class="payment-information form-information-module">
+							<h3>Información de la tarjeta</h3>
+							<div class="row">
+								<div class="col-sm-6 form-group">
+									<label for="name" class="control-label">
+										Nombre en la tarjeta*
+										<input id="name" type="text" class="form-control">
+									</label>
+								</div>
+								<div class="col-sm-6 form-group">
+									<label for="name" class="control-label">
+										Número de la tarjeta*
+										<input id="name" type="text" class="form-control">
+									</label>
+								</div>
+								<div class="col-sm-4 form-group">
+									<label for="name" class="control-label row">
+										<div class="col-sm-12">
+											Expiración*
+										</div>
+										<div class="col-sm-6 no-padding-right">
+											<input id="name" type="number" min="0" max="99" class="form-control" placeholder="MM">
+										</div>
+										<div class="col-sm-6 no-padding-right">
+											<input id="name" type="number" min="0" max="99" class="form-control" placeholder="AA">
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="total-table-module total-table-container">
+							<table>
+								<tbody>
+									<tr>
+										<td>Subtotal</td>
+										<td class="subtotal-container">$20</td>
+										<input name="subtotalInput" type="hidden" value="20">
+									</tr>
+									<tr>
+										<td>Impuesto +13%</td>
+										<td class="tax-container">$2.6</td>
+										<input name="taxInput" type="hidden" value="2.6">
+									</tr>
+									<tr>
+										<td>+ Envío</td>
+										<td class="shipping-container">$5</td>
+										<input name="taxInput" type="hidden" value="2.6">
+									</tr>
+									<tr class="total-row">
+										<td>Total Parcial</td>
+										<td class="total-container">$27.6</td>
+										<input name="totalInput" type="hidden" value="27.6">
+									</tr>
+								</tbody>
+							</table>
+
+							<a href="payment-success.html" class="btn btn-primary btn-lg">Completar la orden</a>
+
+							<div class="carts-container">
+								<i class="fa fa-cc-visa" aria-hidden="true"></i>
+								<i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+								<i class="fa fa-cc-amex" aria-hidden="true"></i>
+								<i class="fa fa-cc-paypal" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="newsletter-module">
+				<div class="container">
+					<h2>Newsletter</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at lectus sit amet nunc posuere malesuada sit amet vitae enim. Sed id purus malesuada, viverra quam ut, semper eros.</p>
+					<div class="form-container">
+						<form action="">
+							<div class="row">
+								<div class="col-sm-8 no-padding padding-sm">
+									<label class="control-label newsletter-input-label" for="newsletter-input-input">
+										<input class="form-control" id="newsletter-input-input" type="search" placeholder="Email*">
+									</label>
+								</div>
+								<div class="col-sm-4">
+									<button type="submit" class="btn btn-primary btn-lg">Agregarme</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</div> 
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 footer-columns">
+						<h4>Contacto</h4>
+						<p>150 mts Oeste de la esquina Noroeste del Parque de la Trinidad, Alajuela</p>
+						<p>(+506) 2431 3434</p>
+						<p>(+506) 2431 2278</p>
+						<p>info@clinicaintegralcordero.com</p>
+						<p>(+506) 7099 9287</p>
+					</div>
+
+					<div class="col-md-3 footer-columns">
+						<h4>Horarios</h4>
+						<p>Lunes a Miércoles: 9:00 a.m. – 7:00 p.m.</p>
+						<p>Jueves: 4:00 p.m. – 7:00 p.m.</p>
+						<p>Viernes: 9:00 a.m. – 7:00 p.m.</p>
+					</div>
+
+					<div class="col-md-3 footer-columns">
+						<h4>Accesos Directos</h4>
+						<p><a href="#">Home</a></p>
+						<p><a href="#">Blog</a></p>
+						<p><a href="#">Farmacia</a></p>
+						<p><a href="#">Contactenos</a></p>
+					</div>
+
+					<div class="col-md-3 footer-columns">
+						<h4>Redes Sociales</h4>
+						<p><a href="https://www.facebook.com/clinicaintegralcordero/" target="_blank"><i class="fa fa-facebook"></i> /clinicaintegralcordero</a></p>
+						<p><a href="https://www.youtube.com/channel/UC4etJ8wR9UZ9acxi-Ld0LVw" target="_blank"><i class="fa fa-youtube"></i></a></p>
+						<p><a href="https://www.instagram.com/clinicaintegralcordero/" target="_blank"><i class="fa fa-instagram"></i> /clinicaintegralcordero</a></p>
+						<p><a href="mailto:info@clinicaintegralcordero.com" target="_blank"><i class="fa fa-envelope"></i> info@clinicaintegralcordero.com</a></p>
+					</div>
+				</div>
+				<p class="copyright-text">2017. Todos los derechos reservados.</p>
+			</div>
+		</footer>
+
+		<!--build:js js/main-payment-information-module.min.js -->
+		<script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/lib/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="js/lib/bootstrap.min.js"></script>
+		<!-- endbuild -->
+
+	</body>
+</html>
+
