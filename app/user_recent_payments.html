@@ -49,116 +49,70 @@
 				</div>
 			</nav>
 		</div>
+		
+		<div class="sub-navigation-module">
+			<a href="user_profile.html" class="btn btn-secondary">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				Información de cuenta
+			</a>
+			<a href="user_recent_payments.html" class="btn btn-primary">
+				<i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+				Pagos Recientes
+			</a>
+			<a href="/" class="btn btn-secondary">
+				<i class="fa fa-book" aria-hidden="true"></i>
+				Recetas médicas
+			</a>
+		</div>
 
+		<div class="main-content user-profile-container">
+			<div class="row">
 
-		<div class="main-content payment-method-container">
-			
-			<div class="payment-method-module container">
-				<div class="breadcrumb-container row">
-					<div class="col-sm-12">
-						<ol class="breadcrumb">
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="shopping-cart.html">Carrito de compras</a></li>
-							<li><a href="payment-method.html">Método de Pago</a></li>
-							<li class="active">Información de tarjeta</li>
-						</ol>
-					</div>
+				<div class="table-module col-sm-12">
+					<table>
+						<thead>
+							<tr>
+								<th>Receta</th>
+								<th>Médico</th>
+								<th>Fecha Cita</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="recipe-title recipe-number-1">
+								<td>
+									<span class="title visible-sm visible-xs">Receta</span>
+									<a href="/">#1231235</a>
+								</td>
+								<td>
+									<span class="title visible-sm visible-xs">Receta</span>
+									Jahgnna Cordero
+								</td>
+								<td>
+									<span class="title visible-sm visible-xs">Fecha Cita</span>
+									12 abril 2017
+								</td>
+								<td>
+									<a href="/" class="btn btn-secondary float-right">
+										<i class="fa fa-print" aria-hidden="true"></i>
+										Imprimir indicaciones
+									</a>
+								</td>
+							</tr>
+							<tr class="table-row-details recipe-product-container recipe-number-1">
+								<td colspan="4">
+									<div class="recipe-product">
+										<h4><a href="/">Nombre producto 12ml</a></h4>
+										<p>Se debe tomar 2 veces al día, cada 12 horas.</p>
+										<p>Este producto puede producir irritación en algunos casos, se le recomienda llamar al doctor en caso de presentar...</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="row">
-					<div class="col-sm-7">
-						<div class="payment-information form-information-module">
-							<h3>Información de la tarjeta</h3>
-							<div class="row">
-								<div class="col-sm-6 form-group">
-									<label for="name" class="control-label">
-										Nombre en la tarjeta*
-										<input id="name" type="text" class="form-control">
-									</label>
-								</div>
-								<div class="col-sm-6 form-group">
-									<label for="name" class="control-label">
-										Número de la tarjeta*
-										<input id="name" type="text" class="form-control">
-									</label>
-								</div>
-								<div class="col-sm-4 form-group">
-									<label for="name" class="control-label row">
-										<div class="col-sm-12">
-											Expiración*
-										</div>
-										<div class="col-sm-6 no-padding-right">
-											<input id="name" type="number" min="0" max="99" class="form-control" placeholder="MM">
-										</div>
-										<div class="col-sm-6 no-padding-right">
-											<input id="name" type="number" min="0" max="99" class="form-control" placeholder="AA">
-										</div>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-5">
-						<div class="total-table-module total-table-container">
-							<table>
-								<tbody>
-									<tr>
-										<td>Subtotal</td>
-										<td class="subtotal-container">$20</td>
-										<input name="subtotalInput" type="hidden" value="20">
-									</tr>
-									<tr>
-										<td>Impuesto +13%</td>
-										<td class="tax-container">$2.6</td>
-										<input name="taxInput" type="hidden" value="2.6">
-									</tr>
-									<tr>
-										<td>+ Envío</td>
-										<td class="shipping-container">$5</td>
-										<input name="taxInput" type="hidden" value="2.6">
-									</tr>
-									<tr class="total-row">
-										<td>Total Parcial</td>
-										<td class="total-container">$27.6</td>
-										<input name="totalInput" type="hidden" value="27.6">
-									</tr>
-								</tbody>
-							</table>
 
-							<a href="payment-success.html" class="btn btn-primary btn-lg">Completar la orden</a>
-
-							<div class="carts-container">
-								<i class="fa fa-cc-visa" aria-hidden="true"></i>
-								<i class="fa fa-cc-mastercard" aria-hidden="true"></i>
-								<i class="fa fa-cc-amex" aria-hidden="true"></i>
-								<i class="fa fa-cc-paypal" aria-hidden="true"></i>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
-
-
-			<div class="newsletter-module">
-				<div class="container">
-					<h2>Newsletter</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at lectus sit amet nunc posuere malesuada sit amet vitae enim. Sed id purus malesuada, viverra quam ut, semper eros.</p>
-					<div class="form-container">
-						<form action="">
-							<div class="row">
-								<div class="col-sm-8 no-padding padding-sm">
-									<label class="control-label newsletter-input-label" for="newsletter-input-input">
-										<input class="form-control" id="newsletter-input-input" type="search" placeholder="Email*">
-									</label>
-								</div>
-								<div class="col-sm-4">
-									<button type="submit" class="btn btn-primary btn-lg">Agregarme</button>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			
 		</div> 
 
 		<footer class="footer">
@@ -204,7 +158,13 @@
 		<script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/lib/jquery-1.11.2.min.js"><\/script>')</script>
 		<script src="js/lib/bootstrap.min.js"></script>
+		<script src="js/lib/select2.min.js"></script>
+		<script src="js/main.js"></script>
 		<!-- endbuild -->
+
+		<script type="text/javascript">
+			userProfileModule.init();
+		</script>
 
 	</body>
 </html>

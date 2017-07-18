@@ -216,4 +216,18 @@ var paymentMethodModule = {
 		});
 	}
 }
+var userProfileModule = {
+	init: function(){
+		var instance = this;
+		instance.bindUI();
+	},
+	bindUI: function(){
+		var instance = this;
+		instance.initDropdownSelector();
+	},
+	initDropdownSelector: function(){
+		//Init Dropdowns Selectors
+		$('select').select2();
+	}
+}
 

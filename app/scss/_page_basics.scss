@@ -9,3 +9,16 @@
 		margin-top: 100px;
 	}	
 }
+.user-profile-container {
+	max-width: 1000px;
+    margin: 0 auto;
+    h3 {
+    	margin-bottom: 30px;
+    }
+    .form-information-module {
+    	min-height: 500px;
+    }
+    .saved-changes {
+    	color: $blue-green;
+    }
+}
