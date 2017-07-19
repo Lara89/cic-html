@@ -9295,6 +9295,25 @@ a, a:hover, a:focus, a:active {
 .modal-dialog {
   z-index: 1041; }
 
+.full-bg-image {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(51, 51, 51, 0.6); }
+
 @media (max-width: 991px) {
   .hidden-sm {
     display: none; }
@@ -9392,22 +9411,10 @@ a, a:hover, a:focus, a:active {
     position: relative;
     color: #FFF;
     font-size: 40px; }
-  .background-slider-header .full-bg-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover; }
+  .background-slider-header .full-bg-image,
   .background-slider-header .bg-overlay {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(51, 51, 51, 0.6); }
+    z-index: 0; }
   .background-slider-header .jumbotron {
     height: 500px;
     margin: 0;
@@ -9416,7 +9423,8 @@ a, a:hover, a:focus, a:active {
     text-align: center; }
 
 .footer {
-  padding: 60px 0; }
+  padding: 60px 0;
+  background: #F9F9F9; }
   .footer p {
     font-size: 12px; }
   .footer .copyright-text {
@@ -9479,12 +9487,35 @@ a, a:hover, a:focus, a:active {
   background: white; }
   .table-module table {
     width: 100%; }
+  .table-module th {
+    padding-bottom: 10px; }
   .table-module td {
     padding: 10px 0 20px 0; }
-  .table-module .table-row-details {
+  .table-module .recipe-title {
+    border-top: 2px solid #F9F9F9; }
+  .table-module .view-more-btn {
+    width: 100px;
+    text-align: right; }
+  .table-module .view-less {
+    display: none; }
+  .table-module .opened .view-less {
+    display: block; }
+  .table-module .opened .view-more {
+    display: none; }
+  .table-module .add-to-cart-btn {
+    margin-bottom: 10px; }
+  .table-module .table-row-details td {
+    padding: 0; }
+  .table-module .table-row-details .details-element {
+    margin-bottom: 5px;
+    padding: 10px 30px;
     background: #F3F3F3; }
-    .table-module .table-row-details td {
-      padding: 10px 30px 30px 30px; }
+  .table-module .table-row-details .bill-product-element {
+    position: relative;
+    padding: 10px 90px 10px 30px; }
+  .table-module .table-row-details .price-element {
+    position: absolute;
+    right: 40px; }
   @media (max-width: 991px) {
     .table-module table,
     .table-module tbody,
@@ -9500,7 +9531,10 @@ a, a:hover, a:focus, a:active {
       margin-bottom: 30px;
       float: none; }
     .table-module .title {
-      color: black; } }
+      color: black; }
+    .table-module .view-more-btn {
+      padding-left: 0;
+      text-align: left; } }
 
 .social-networks-container {
   margin-bottom: 30px;
@@ -9890,7 +9924,7 @@ a, a:hover, a:focus, a:active {
     margin-right: 5px; }
 
 .shopping-cart-module .file-preview {
-  max-width: 210px; }
+  max-width: 300px; }
 
 @media (max-width: 991px) {
   .shopping-cart-module thead {
@@ -9975,3 +10009,21 @@ a, a:hover, a:focus, a:active {
     margin-right: 20px; }
   .success-module .button-holder {
     padding-top: 30px; }
+
+.contact-module {
+  padding-top: 200px;
+  padding-bottom: 100px; }
+  .contact-module .contact-information-container {
+    background: #FFF;
+    padding: 20px 30px; }
+  .contact-module .map {
+    height: 200px;
+    margin: 40px 0 20px 0; }
+
+.login-form-module {
+  margin: 200px auto 100px auto;
+  float: none; }
+  .login-form-module .login-btn {
+    width: 100%; }
+  .login-form-module .more-actions {
+    margin: 30px 0 0 0; }

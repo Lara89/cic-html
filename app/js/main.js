@@ -230,4 +230,23 @@ var userProfileModule = {
 		$('select').select2();
 	}
 }
+var userRecentPaymentsModule = {
+	init: function(){
+		var instance = this;
+		instance.bindUI();
+	},
+	bindUI: function(){
+		var instance = this;
+		instance.initViewMoreToggle();
+	},
+	initViewMoreToggle: function(){
+		$('.view-more-btn').click(function(){
+			var forElement = $(this).attr('for');
+			var toggledElement = $('.' + forElement);
+
+			$(this).toggleClass('opened');
+			toggledElement.toggleClass('hide');
+		});
+	}
+}
 

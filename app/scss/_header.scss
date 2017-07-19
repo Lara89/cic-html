@@ -117,23 +117,10 @@
 		color: #FFF;
 		font-size: 40px;
 	}
-	.full-bg-image {
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+	.full-bg-image,
 	.bg-overlay {
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: rgba(51, 51, 51, 0.6);
+		z-index: 0;
 	}
 	.jumbotron {
 		height: 500px;
