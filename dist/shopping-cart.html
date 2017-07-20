@@ -9,7 +9,7 @@
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.min.css">
-		
+
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -50,53 +50,109 @@
 		</div>
 
 
-		<div class="main-content payment-method-container">
+		<div class="main-content farmacy-container">
 			
-			<div class="payment-method-module container">
+			<div class="shopping-cart-module container">
 				<div class="breadcrumb-container row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
 							<li><a href="index.html">Inicio</a></li>
-							<li><a href="shopping-cart.html">Carrito de compras</a></li>
-							<li><a href="payment-method.html">Método de Pago</a></li>
-							<li class="active">Información de tarjeta</li>
+							<li class="active">Carrito de compras</li>
 						</ol>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-7">
-						<div class="payment-information form-information-module">
-							<h3>Información de la tarjeta</h3>
-							<div class="row">
-								<div class="col-sm-6 form-group">
-									<label for="name" class="control-label">
-										Nombre en la tarjeta*
-										<input id="name" type="text" class="form-control">
-									</label>
-								</div>
-								<div class="col-sm-6 form-group">
-									<label for="name" class="control-label">
-										Número de la tarjeta*
-										<input id="name" type="text" class="form-control">
-									</label>
-								</div>
-								<div class="col-sm-4 form-group">
-									<label for="name" class="control-label row">
-										<div class="col-sm-12">
-											Expiración*
-										</div>
-										<div class="col-sm-6 no-padding-right">
-											<input id="name" type="number" min="0" max="99" class="form-control" placeholder="MM">
-										</div>
-										<div class="col-sm-6 no-padding-right">
-											<input id="name" type="number" min="0" max="99" class="form-control" placeholder="AA">
-										</div>
-									</label>
-								</div>
-							</div>
+					<div class="col-sm-12">
+						<div class="shopping-cart-table-container">
+							<table>
+								<thead>
+									<tr>
+										<th class="product-details">Producto</th>
+										<th class="product-price">Precio</th>
+										<th class="product-qty-input">Cantidad</th>
+										<th class="total-price">Total</th>
+										<th class="action-holder"></th>
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr class="product-container">
+										<td class="product-details">
+											<div class="product-details-content">
+												<img class="product-img" src="images/farmacy/products/product-example.png">
+												<h3>
+													Product Title
+												</h3>
+												<p>Farma House</p>
+											</div>
+											<input name="productName" type="hidden" value="Product Title">
+											<input name="productId" type="hidden" value="123123">
+										</td>
+										<td class="product-price">
+											<span class="visible-sm visible-xs">Precio</span>
+											<p>$5</p>
+											<input class="unitPrice" name="unitPrice" type="hidden" value="5">
+										</td>
+										<td class="product-qty-input">
+											<label class="control-label qty-input-label" for="qty-input-1">
+												<span class="visible-sm visible-xs">Cantidad</span>
+												<input class="form-control qty-input" min="0" id="qty-input-1" type="number" value="1">
+											</label>
+										</td>
+										<td class="total-price">
+											<span class="visible-sm visible-xs">Total</span>
+											<p>$5</p>
+											<input class="totalPrice" name="totalPrice" type="hidden" value="5">
+										</td>
+										<td class="action-holder">
+											<a class="remove-btn" href="javascript:;">
+												<i class="fa fa-times" aria-hidden="true"></i>
+											</a>
+										</td>
+									</tr>
+
+									<tr class="product-container">
+										<td class="product-details">
+											<div class="product-details-content">
+												<img class="product-img" src="images/farmacy/products/product-example.png">
+												<h3>
+													Product Title
+													<i data-toggle="tooltip" title="Este producto requiere receta, será agregado pero se cobrará una vez se haya confirmado la receta." class="info-icon tt-init fa fa-info-circle" aria-hidden="true"></i>
+												</h3>
+												<p>Farma House</p>
+												<input class="btn btn-secondary recipe-info" name="productRecipe" type="file">
+											</div>
+											<input name="productName" type="hidden" value="Product Title">
+											<input name="productId" type="hidden" value="123123">
+										</td>
+										<td class="product-price">
+											<span class="visible-sm visible-xs">Precio</span>
+											<p>$5</p>
+											<input class="unitPrice" name="unitPrice" type="hidden" value="5">
+										</td>
+										<td class="product-qty-input">
+											<label class="control-label qty-input-label" for="qty-input-3">
+												<span class="visible-sm visible-xs">Cantidad</span>
+												<input class="form-control qty-input" min="0" id="qty-input-3" type="number" value="1">
+											</label>
+										</td>
+										<td class="total-price">
+											<span class="visible-sm visible-xs">Total</span>
+											<p>$5</p>
+											<input class="totalPrice" name="totalPrice" type="hidden" value="5">
+										</td>
+										<td class="action-holder">
+											<a class="remove-btn" href="javascript:;">
+												<i class="fa fa-times" aria-hidden="true"></i>
+											</a>
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+							<div class="clear"></div>
+							
 						</div>
-					</div>
-					<div class="col-sm-5">
 						<div class="total-table-module total-table-container">
 							<table>
 								<tbody>
@@ -110,11 +166,6 @@
 										<td class="tax-container">$2.6</td>
 										<input name="taxInput" type="hidden" value="2.6">
 									</tr>
-									<tr>
-										<td>+ Envío</td>
-										<td class="shipping-container">$5</td>
-										<input name="taxInput" type="hidden" value="2.6">
-									</tr>
 									<tr class="total-row">
 										<td>Total Parcial</td>
 										<td class="total-container">$27.6</td>
@@ -123,7 +174,7 @@
 								</tbody>
 							</table>
 
-							<a href="payment-success.html" class="btn btn-primary btn-lg">Completar la orden</a>
+							<a href="payment-method.html" class="btn btn-primary btn-lg">Continuar</a>
 
 							<div class="carts-container">
 								<i class="fa fa-cc-visa" aria-hidden="true"></i>
@@ -200,8 +251,11 @@
 			</div>
 		</footer>
 
-		<script src="js/main-payment-information-module.min.js"></script>
+		<script src="js/main-shopping-module.min.js"></script>
 
+		<script type="text/javascript">
+			shoppingCartModule.init();
+		</script>
 	</body>
 </html>
 
