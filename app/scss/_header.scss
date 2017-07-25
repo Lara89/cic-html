@@ -44,6 +44,23 @@
 			color: $white;
 			font-size: 20px;
 		}
+		.icon-cart-menu {
+			position: relative;
+			&:before {
+				content: "0";
+				display: block;
+				font-size: 11px;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				top: 48px;
+				right: 14px;
+				background: red;
+				border-radius: 14px;
+				text-align: center;
+				color: $white;
+			}
+		}
 	}
 	&.simple-header {
 		.navbar {
@@ -106,6 +123,31 @@
 						padding: 10px 20px;
 					}
 				}
+			}
+		}
+	}
+	@media (max-width: $screen-xs-max) {
+		.icon-home-menu {
+			position: absolute;
+			top: 20px;
+			right: 0;
+		}
+		.right-menu {
+			width: 100%;
+		}
+		.header-menu {
+			position: static;
+		}
+		.navbar-brand {
+			img {
+				width: 140px;
+			}
+		}
+		.header-actions-wrapper {
+			width: 100%;
+			padding: 0;
+			a {
+				padding: 10px 20px;
 			}
 		}
 	}

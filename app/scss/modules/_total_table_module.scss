@@ -25,4 +25,16 @@
 		font-size: 34px;
 		text-align: center;
 	}
+	@media (max-width: $screen-sm-max) {
+		max-width: 100%;
+		td {
+			width: 50%;
+		}
+		.subtotal-container,
+		.tax-container,
+		.total-container,
+		.shipping-container {
+			text-align: right;
+		}
+	}
 }

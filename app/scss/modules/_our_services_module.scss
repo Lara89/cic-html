@@ -44,4 +44,10 @@
 	.service-element-content {
 		max-width: 420px;
 	}
+	@media (max-width: $screen-xs-max) {
+		.slick-prev,
+		.slick-next {
+			display: none !important;
+		}
+	}
 }

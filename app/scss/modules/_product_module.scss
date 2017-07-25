@@ -67,6 +67,11 @@
 		}
 		.product-image-gallery {
 			padding: 0;
+			.product-secondary-pictures {
+				margin: 20px 0;
+				position: relative;
+				bottom: 0px;
+			}
 		}
 	}
 }

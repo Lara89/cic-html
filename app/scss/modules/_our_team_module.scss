@@ -52,4 +52,10 @@
 			}
 		}
 	}
+	@media (max-width: $screen-xs-max) {
+		.slick-prev,
+		.slick-next {
+			display: none !important;
+		}
+	}
 }

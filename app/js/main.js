@@ -86,7 +86,7 @@ var farmacyModule = {
 		//Init Product Pagination
 		var pages = $('.product-gallery-page');
 		var totalPages = pages.length;
-		$('.product-page-pagination').bootpag({
+		$('.product-page-pagination-up,.product-page-pagination').bootpag({
 			total: totalPages,
 			next: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
 			prev: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'

@@ -13,10 +13,17 @@
 	.map-information {
 		width: 350px;
 		height: 320px;
+		max-width: 100%;
 		padding: 30px;
 		position: absolute;
 		top: 70px;
 		left: 30px;
 		background: #FFF;
+	}
+	@media (max-width: $screen-xs-max) {
+		.map-information {
+			width: 90%;
+			left: 5%;
+		}
 	}
 }

@@ -9319,7 +9319,11 @@ a, a:hover, a:focus, a:active {
   .hidden-sm {
     display: none; }
   .padding-sm {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  .breadcrumb li {
+    display: block; }
+  .breadcrumb > li + li {
+    padding-left: 10px; } }
 
 .header .slick-slider {
   z-index: -1; }
@@ -9360,6 +9364,21 @@ a, a:hover, a:focus, a:active {
     padding: 50px 20px 40px 20px;
     color: white;
     font-size: 20px; }
+  .header .header-actions-wrapper .icon-cart-menu {
+    position: relative; }
+    .header .header-actions-wrapper .icon-cart-menu:before {
+      content: "0";
+      display: block;
+      font-size: 11px;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 48px;
+      right: 14px;
+      background: red;
+      border-radius: 14px;
+      text-align: center;
+      color: white; }
 
 .header.simple-header .navbar {
   position: relative; }
@@ -9405,6 +9424,23 @@ a, a:hover, a:focus, a:active {
         display: block; }
         .header .main-menu-wrapper .main-menu li a {
           padding: 10px 20px; } }
+
+@media (max-width: 767px) {
+  .header .icon-home-menu {
+    position: absolute;
+    top: 20px;
+    right: 0; }
+  .header .right-menu {
+    width: 100%; }
+  .header .header-menu {
+    position: static; }
+  .header .navbar-brand img {
+    width: 140px; }
+  .header .header-actions-wrapper {
+    width: 100%;
+    padding: 0; }
+    .header .header-actions-wrapper a {
+      padding: 10px 20px; } }
 
 .background-slider-header {
   position: relative;
@@ -9616,11 +9652,16 @@ a, a:hover, a:focus, a:active {
   .our-location .map-information {
     width: 350px;
     height: 320px;
+    max-width: 100%;
     padding: 30px;
     position: absolute;
     top: 70px;
     left: 30px;
     background: #FFF; }
+  @media (max-width: 767px) {
+    .our-location .map-information {
+      width: 90%;
+      left: 5%; } }
 
 .our-services {
   position: relative; }
@@ -9656,6 +9697,10 @@ a, a:hover, a:focus, a:active {
     bottom: 15px; }
   .our-services .service-element-content {
     max-width: 420px; }
+  @media (max-width: 767px) {
+    .our-services .slick-prev,
+    .our-services .slick-next {
+      display: none !important; } }
 
 .our-team .our-team-header h2 {
   margin: 70px 0 30px 0; }
@@ -9698,6 +9743,11 @@ a, a:hover, a:focus, a:active {
     width: 100%;
     padding: 0; } }
 
+@media (max-width: 767px) {
+  .our-team .slick-prev,
+  .our-team .slick-next {
+    display: none !important; } }
+
 .testimonials {
   background: #333333;
   padding: 50px 0 30px 0; }
@@ -9724,6 +9774,9 @@ a, a:hover, a:focus, a:active {
     font-size: 40px; }
   .blog-comments-container .new-comment-form {
     border-top: 1px solid #F9F9F9; }
+  @media (max-width: 991px) {
+    .blog-comments-container .comment-feedback {
+      margin: 30px 0 0 0; } }
 
 .blog-elements-container h2 {
   margin-top: 0; }
@@ -9747,6 +9800,13 @@ a, a:hover, a:focus, a:active {
   padding: 50px 30px 40px 30px; }
   .blog-elements-container .blog-element-details h2 {
     margin-top: 50px; }
+
+.blog-elements-container .image-container {
+  display: block; }
+
+@media (max-width: 991px) {
+  .blog-elements-container .image-container {
+    margin-bottom: 20px; } }
 
 .farmacy-ad-widget {
   margin-bottom: 100px; }
@@ -9782,10 +9842,14 @@ a, a:hover, a:focus, a:active {
   .farmacy-elements-container .product-price {
     font-size: 16px; }
   .farmacy-elements-container .product-page-pagination {
-    width: 100%;
-    margin-bottom: 100px; }
+    width: 100%; }
     .farmacy-elements-container .product-page-pagination .pagination {
       float: right; }
+    .farmacy-elements-container .product-page-pagination.product-page-pagination-bottom {
+      margin-bottom: 100px; }
+    .farmacy-elements-container .product-page-pagination.product-page-pagination-up .pagination {
+      margin-top: 0;
+      margin-right: 15px; }
   @media (max-width: 768px) {
     .farmacy-elements-container .product-information {
       padding-left: 30px;
@@ -9867,7 +9931,11 @@ a, a:hover, a:focus, a:active {
   .product-module .expand-image-btn {
     display: none; }
   .product-module .product-image-gallery {
-    padding: 0; } }
+    padding: 0; }
+    .product-module .product-image-gallery .product-secondary-pictures {
+      margin: 20px 0;
+      position: relative;
+      bottom: 0px; } }
 
 .shopping-cart-module table {
   width: 100%; }
@@ -10000,6 +10068,16 @@ a, a:hover, a:focus, a:active {
   .total-table-module .carts-container {
     font-size: 34px;
     text-align: center; }
+  @media (max-width: 991px) {
+    .total-table-module {
+      max-width: 100%; }
+      .total-table-module td {
+        width: 50%; }
+      .total-table-module .subtotal-container,
+      .total-table-module .tax-container,
+      .total-table-module .total-container,
+      .total-table-module .shipping-container {
+        text-align: right; } }
 
 .payment-method-module .total-table-module {
   width: 100%; }
@@ -10019,6 +10097,15 @@ a, a:hover, a:focus, a:active {
     margin-right: 20px; }
   .success-module .button-holder {
     padding-top: 30px; }
+  @media (max-width: 991px) {
+    .success-module {
+      max-width: 90%;
+      padding: 50px 20px; }
+      .success-module .btn {
+        width: 100%;
+        margin: 0; }
+      .success-module .btn-first {
+        margin-bottom: 20px; } }
 
 .contact-module {
   max-width: 1000px;

@@ -74,4 +74,12 @@ a {
 	.padding-sm {
 		padding: 0 15px;
 	}
+	.breadcrumb {
+		li {
+			display: block;
+		}
+		> li + li {
+			padding-left: 10px;
+		}
+	}
 }

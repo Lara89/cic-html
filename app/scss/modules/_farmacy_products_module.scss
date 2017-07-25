@@ -25,9 +25,17 @@
 	}
 	.product-page-pagination {
 		width: 100%;
-		margin-bottom: 100px;
 		.pagination {
 			float: right;
+		}
+		&.product-page-pagination-bottom {
+			margin-bottom: 100px;
+		}
+		&.product-page-pagination-up {
+			.pagination {
+				margin-top: 0;
+				margin-right: 15px;
+			}
 		}
 	}
 	@media (max-width: $screen-sm-min) {

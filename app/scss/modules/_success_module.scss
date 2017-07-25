@@ -17,4 +17,15 @@
 	.button-holder {
 		padding-top: 30px;
 	}
+	@media (max-width: $screen-sm-max) {
+		max-width: 90%;
+		padding: 50px 20px;
+		.btn {
+			width: 100%;
+			margin: 0;
+		}
+		.btn-first {
+			margin-bottom: 20px;
+		}
+	}
 }

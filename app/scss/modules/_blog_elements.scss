@@ -27,4 +27,12 @@
 			margin-top: 50px;
 		}
 	}
+	.image-container {
+		display: block;
+	}
+	@media (max-width: $screen-sm-max) {
+		.image-container {
+			margin-bottom: 20px;
+		}
+	}
 }
